@@ -18,7 +18,7 @@
       
             <ul class="nav nav-pills">
               <li class="nav-item"><a href="/" class="nav-link text-dark">Create Expenses</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-dark">View Transactions Charts</a></li>
+              <li class="nav-item"><a href="/statistics.html" class="nav-link text-dark">Statistics</a></li>
             </ul>
           </header>
         </div>
@@ -29,15 +29,15 @@
                 <h1 class="text-center mb-4">Income and Expense Tracker</h1>
                 <form id="transaction-form" class="row g-3">
                     <div class="col-md-4">
-                        <label for="type" class="form-label">Type</label>
-                        <select id="type" class="form-select">
+                        <label for="category" class="form-label">Category</label>
+                        <select id="category" class="form-select">
                             <option value="income">Income</option>
                             <option value="expense">Expense</option>
                         </select>
                     </div>
                     <div class="col-md-4">
-                        <label for="category" class="form-label">Category</label>
-                        <input type="text" id="category" class="form-control" required>
+                        <label for="transaction_title" class="form-label">Transaction</label>
+                        <input type="text" id="transaction_title" class="form-control" required>
                     </div>
                     <div class="col-md-4">
                         <label for="amount" class="form-label">Amount</label>
@@ -50,8 +50,8 @@
                 <table class="table mt-4">
                     <thead class="table-light">
                         <tr>
-                            <th>Type</th>
                             <th>Category</th>
+                            <th>Title</th>
                             <th>Amount</th>
                             <th>Action</th>
                         </tr>
